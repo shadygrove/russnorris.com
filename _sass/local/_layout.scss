@@ -2,7 +2,7 @@ body {
   color: $textblue;
   line-height: $base-line-height;
   /*background-color: $dark-gray;*/
-  background-color: #303333;
+  background-color: #000;
 }
 
 
@@ -13,16 +13,16 @@ pre {
 .wrapper {
   @include outer-container;
   @include border-style(solid);
-  @include border-width(0 10px);
+  @include border-width(0 0px);
   @include border-color(#423838);
 }
 
 header {
   @include clearfix;
-  background-color: #eee;
+  background-color: #000;
   background-image: url('../images/header-transparent.png');
   background-repeat: no-repeat;
-  height: 160px;
+  height: 120px;
 
   .wrapper {
     @include outer-container;
@@ -31,24 +31,25 @@ header {
 
   h1 {
     color: #fff;
-    font-family: "helvetica Neue", "Helvetica", sans-serif;
+    font-family: "Verdana", "Helvetica", sans-serif;
     font-weight: 100;
     line-height: $base-line-height;
     margin: 0;
   }
   h1 > a { 
-    color: #fff;
   }
 
   p { 
     padding: 0;
     margin: 0;
+    color: #999;
+    font-size: 1.4em;
   }
 }
 
 .nav-wrapper {
   padding: 0 17px;
-  background: #423838;
+  background: #777;
 }
 
 section { 
@@ -112,30 +113,3 @@ footer {
   color: $headingcolor;
 }
 
-
-.the-band { 
-
-    .member-profile {
-      @include row();
-
-      img {
-        float: right;
-        margin-right: 0;
-        margin-top: 0;
-        margin-left: 20px;
-      }
-
-      margin-bottom: 15px;
-    }
-
-    .member-profile-alt {
-      @include row();
-      img {
-        float: left;
-        margin-left: 0;
-        margin-top: 0;
-        margin-right: 20px;
-      }
-      margin-bottom: 15px;
-    }
-}
