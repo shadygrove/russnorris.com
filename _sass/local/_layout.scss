@@ -1,0 +1,141 @@
+body {
+  color: $textblue;
+  line-height: $base-line-height;
+  /*background-color: $dark-gray;*/
+  background-color: #303333;
+}
+
+
+pre {
+  line-height: 1.6em;
+}
+
+.wrapper {
+  @include outer-container;
+  @include border-style(solid);
+  @include border-width(0 10px);
+  @include border-color(#423838);
+}
+
+header {
+  @include clearfix;
+  background-color: #eee;
+  background-image: url('../images/header-transparent.png');
+  background-repeat: no-repeat;
+  height: 160px;
+
+  .wrapper {
+    @include outer-container;
+    padding: 0.5em 1em;
+  }
+
+  h1 {
+    color: #fff;
+    font-family: "helvetica Neue", "Helvetica", sans-serif;
+    font-weight: 100;
+    line-height: $base-line-height;
+    margin: 0;
+  }
+  h1 > a { 
+    color: #fff;
+  }
+
+  p { 
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.nav-wrapper {
+  padding: 0 17px;
+  background: #423838;
+}
+
+section { 
+  @include clearfix;
+  padding: 0.5em 1em;
+  text-align: left;
+
+  &.main-content {
+    @include outer-container;
+    @include span-columns(12);
+    background-color: white;
+    min-height: 20em;
+
+    div {
+      
+      //height: 100%;
+    }
+  }
+}
+
+article {
+}
+
+footer {
+  @include outer-container;
+  padding: 0.5em 0em;
+  display: block;
+  clear: both;
+  
+  .footer-content {
+    background-color: $light-gray;
+    
+    p { font-size: .8em;  text-align: center; }
+  }
+}
+
+/* ************ PAGE STYLES *********** */
+.blog-home-content {
+  @include span-columns(8);
+
+}
+
+.blog-home-sidebar {
+  @include span-columns(4);
+}
+
+.blog-home-blurbs {
+  h2 {
+    color: blue;
+  }
+
+  .read-more {
+    float: right;
+  }
+
+}
+.blog-home-blurbs h2 {
+  font-size: 1.6em;
+}
+.blog-home-blurbs h2 > a {
+  color: $headingcolor;
+}
+
+
+.the-band { 
+
+    .member-profile {
+      @include row();
+
+      img {
+        float: right;
+        margin-right: 0;
+        margin-top: 0;
+        margin-left: 20px;
+      }
+
+      margin-bottom: 15px;
+    }
+
+    .member-profile-alt {
+      @include row();
+      img {
+        float: left;
+        margin-left: 0;
+        margin-top: 0;
+        margin-right: 20px;
+      }
+      margin-bottom: 15px;
+    }
+}

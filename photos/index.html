@@ -1,0 +1,11 @@
+---
+title: Photos
+---
+
+<div>
+	{% for i in (1..41) %}
+		<div style="float: left">
+			<a href="{{ site.gallerypath }}{{ i }}.jpg"><img src="{{ site.gallerypath }}{{ i }}.jpg" style="height: 200px; width: auto; margin: 10px 10px 15px 0;" /></a>
+		</div>
+	{% endfor %}
+</div>

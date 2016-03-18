@@ -1,0 +1,33 @@
+# Do not use tabs in configuration files
+# This will either lead to parsing errors, or Jekyll will revert to the default settings. Use spaces instead.
+source: .
+destination: _site
+url: http://www.intothemountainband.com
+name: "Russ Norris"
+
+# Serving
+detach:  false
+port:    4000
+host:    localhost
+baseurl: "" # config.yml default variable. does not include hostname
+basepath: "/"
+imagespath: "/assets/images/"
+gallerypath: "/assets/gallery/"
+csspath: "/assets/css/"
+scriptspath: "/assets/scripts/"
+
+sass:
+  sass_dir: _sass
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "main"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "main"

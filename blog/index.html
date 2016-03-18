@@ -1,0 +1,18 @@
+---
+title: Blog
+---
+
+<div class="blog-home-content">
+
+	<div class="blog-home-blurbs">
+		{% for post in site.posts %}
+		  <p>
+		    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+		    {{ post.excerpt }}
+		  </p>
+		  <div class="read-more">
+		  	... <a href="{{ site.baseurl }}{{ post.url }}">read more</a>
+		  </div>
+		{% endfor %}
+	</div>
+</div>
