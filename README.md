@@ -1,9 +1,9 @@
-# intothemountainband.com
+# RussNorris.com
 This is the web site code for Into The Mountain Band
 To view the live site visit:  
-http://www.intothemountainband.com  
+http://www.russnorris.com  
 or 
-http://shadygrove.github.io/intothemountain/
+http://shadygrove.github.io/russnorris/
 
 ### Info
 [Markdown](http://en.wikipedia.org/wiki/Markdown)  
@@ -19,13 +19,13 @@ http://shadygrove.github.io/intothemountain/
 ## About This Project
 
 #### Who is this for?
-It's for the band, Into The Mountain.
+It's for Russ to promote his guitar abilities.
 
 #### What is it?
 It's just a static web application started with a GitHub pages template and running Jekyll
 
 #### When was it created?
-Started in December of 2015.
+Started in March 2016.
 
 #### Why is this here?
 Every band needs a web site, especially a free one!
