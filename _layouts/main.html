@@ -7,15 +7,15 @@
     <title>{{ site.name }} - {{ page.title }}</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <link rel="stylesheet" href="{{ site.csspath }}styles-mobile.css">
-    <link rel="stylesheet" href="{{ site.csspath }}styles-desktop.css" media="(min-width:50em)">
+    <link rel="stylesheet" href="{{ site.basepath }}{{ site.csspath }}styles-mobile.css">
+    <link rel="stylesheet" href="{{ site.basepath }}{{ site.csspath }}styles-desktop.css" media="(min-width:50em)">
     
     <!--[if (lt IE 9) & (!IEMobile)]>
     IE 9 stylesheets here
     <![endif]-->
 
-    <script src="{{ site.scriptspath }}jquery-1.11.3.min.js"></script>
-    <script src="{{ site.scriptspath }}components/accordion-tabs.js"></script>
+    <script src="{{ site.basepath }}{{ site.scriptspath }}jquery-1.11.3.min.js"></script>
+    <script src="{{ site.basepath }}{{ site.scriptspath }}components/accordion-tabs.js"></script>
   </head>
   </head>
   <body>
@@ -35,7 +35,7 @@
 
       {% include footer.html %}
 
-      <script src="{{ site.scriptspath }}scale.fix.js"></script>
+      <script src="{{ site.basepath }}{{ site.scriptspath }}scale.fix.js"></script>
       
     </div>
 
