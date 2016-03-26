@@ -10,11 +10,11 @@ detach:  false
 port:    4000
 host:    localhost
 baseurl: "" # config.yml default variable. does not include hostname
-basepath: "/russnorris.com"
-imagespath: "/assets/images/"
-gallerypath: "/assets/gallery/"
-csspath: "/assets/css/"
-scriptspath: "/assets/scripts/"
+basepath: "/"
+imagespath: "assets/images/"
+gallerypath: "assets/gallery/"
+csspath: "assets/css/"
+scriptspath: "assets/scripts/"
 
 sass:
   sass_dir: _sass
