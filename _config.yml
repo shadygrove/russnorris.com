@@ -9,7 +9,7 @@ name: "Russ Norris"
 detach:  false
 port:    4000
 host:    localhost
-baseurl: "" # config.yml default variable. does not include hostname
+baseurl: "/russnorris.com" # config.yml default variable. does not include hostname
 basepath: "/"
 imagespath: "assets/images/"
 gallerypath: "assets/gallery/"
