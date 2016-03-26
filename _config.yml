@@ -10,7 +10,7 @@ detach:  false
 port:    4000
 host:    localhost
 baseurl: "/russnorris.com" # config.yml default variable. does not include hostname
-basepath: "/"
+basepath: "/russnorris.com/"
 imagespath: "assets/images/"
 gallerypath: "assets/gallery/"
 csspath: "assets/css/"
