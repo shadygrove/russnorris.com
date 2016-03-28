@@ -22,7 +22,7 @@ header {
   background-color: #000;
   background-image: url('../images/header-transparent.png');
   background-repeat: no-repeat;
-  height: 120px;
+  margin-bottom: 15px;
 
   .wrapper {
     @include outer-container;
@@ -87,6 +87,7 @@ footer {
 }
 
 /* ************ PAGE STYLES *********** */
+
 .blog-home-content {
   @include span-columns(8);
 
